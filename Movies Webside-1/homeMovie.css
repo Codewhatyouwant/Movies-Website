@@ -1,0 +1,209 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* background: #6c2dff; */
+    font-family: "Josefin Sans";
+}
+
+body {
+    flex: auto;
+    background-image: linear-gradient(90deg, #7d48e8, #000);
+    font-family: 'Josefin Sans';
+}
+
+header {
+    /* /* max-height: 100vh; */
+    min-width: 100%;
+    height: 15vh;
+
+    /* background: #000; */
+}
+
+.top {
+    position: relative;
+    /* bottom: 18vh; */
+}
+
+nav {
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo #lines {
+    width: 1px;
+}
+
+.logo #title {
+    position: relative;
+    height: auto;
+    width: 15vw;
+    top: -1.4 vh;
+}
+
+.search {
+    position: absolute;
+    padding: 0px 0px 0px 100px;
+    left: 20vw;
+}
+
+.search ul li {
+    list-style: none;
+}
+
+.search ul li input {
+    min-height: 35px;
+    min-width: 24vw;
+    border: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+    font: bold;
+    background-color: #ededed;
+}
+
+.search ul li:hover input {
+    transition: 0.3s;
+    box-shadow: 0px 5px 25px #0e081c;
+    background-color: #ffffff;
+}
+
+.search ul li button {
+    color: #130fff;
+    background-color: #acacac;
+    position: absolute;
+    /* font-size: 20px; */
+    left: 28.9vw;
+    min-height: 35px;
+    min-width: 5vw;
+    border: 0px;
+    /* border-radius: 40px; */
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search ul li:hover button {
+    transition: 0.3s;
+    color: white;
+    box-shadow: 0px 5px 25px #713bdd;
+    background-color: rgb(0, 80, 255);
+}
+
+
+.nav_links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav_links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav_links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav_links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav_links ul li:hover::after {
+    width: 100%;
+}
+
+.nav_links ul li:hover {
+    transition: 0.3s;
+    background: #542ca3;
+    /* border-radius: 30px; */
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main h1 {
+    position: relative;
+    top: 0vh;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 36.5vw;
+    padding-top: 5px;
+    width: 30vw;
+    background: #5227a7;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    box-shadow: 0px 10px 10px #221344;
+}
+
+.all-movie .multi-movies img:hover {
+    box-shadow: 0px 5px 25px #2c1959;
+    background: #542ca3;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: 0.3s all ease-in-out;
+    transform: scale(1.1);
+}
+
+.all-movie .multi-movies .Name {
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    padding: 10px;
+    font-size: medium;
+    text-align: center;
+    background: #293ad7;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.all-movie .multi-movies .Name:hover {
+    box-shadow: 0px 5px 20px#6670cd;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+.all-movie {
+    display: inline-block;
+    border-radius: 5px;
+    margin: 2%;
+}
+.all-movie .multi-movies{
+    display: block;
+    float: left;
+    height: 31vh;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+.all-movie .multi-movies img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
